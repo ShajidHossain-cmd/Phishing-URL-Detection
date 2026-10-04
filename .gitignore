@@ -1,1 +1,3 @@
-data_feature/data_feature/processed_merged_urls_v2.csv
+data_feature/processed_merged_urls_v2.csv
+
+__pycache__/
