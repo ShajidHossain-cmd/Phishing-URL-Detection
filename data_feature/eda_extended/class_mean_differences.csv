@@ -1,0 +1,37 @@
+source,feature,benign_mean,phishing_mean,phishing_minus_benign
+All,url_length,50.38176,46.00913,-4.37262
+All,host_length,17.35779,21.95554,4.59775
+All,path_length,24.5755,13.57017,-11.00533
+All,query_length,5.94687,5.40524,-0.54163
+All,digit_ratio,0.0551,0.05558,0.00048
+All,special_char_ratio,0.15627,0.16806,0.01179
+All,subdomain_count,0.59661,1.07188,0.47527
+All,url_entropy,4.12412,4.05873,-0.06539
+All,has_https_scheme,0.24302,0.28716,0.04414
+All,has_ip_host,5e-05,0.00482,0.00477
+All,has_login_keyword,0.0257,0.03996,0.01427
+All,has_verify_keyword,0.00112,0.00422,0.0031
+Kaggle,url_length,57.67541,45.78397,-11.89144
+Kaggle,host_length,16.76844,19.29864,2.53019
+Kaggle,path_length,32.31722,18.76618,-13.55104
+Kaggle,query_length,7.82024,5.63453,-2.18571
+Kaggle,digit_ratio,0.07182,0.04712,-0.0247
+Kaggle,special_char_ratio,0.14312,0.14545,0.00233
+Kaggle,subdomain_count,0.41861,0.98055,0.56194
+Kaggle,url_entropy,4.20967,4.00919,-0.20049
+Kaggle,has_https_scheme,0.00456,0.0741,0.06954
+Kaggle,has_ip_host,6e-05,0.00352,0.00346
+Kaggle,has_login_keyword,0.03379,0.04988,0.01609
+Kaggle,has_verify_keyword,0.00147,0.00513,0.00366
+UCI PhiUSIIL,url_length,27.22861,46.21977,18.99116
+UCI PhiUSIIL,host_length,19.22861,24.44107,5.21246
+UCI PhiUSIIL,path_length,0.0,8.70929,8.70929
+UCI PhiUSIIL,query_length,0.0,5.19074,5.19074
+UCI PhiUSIIL,digit_ratio,0.00203,0.0635,0.06147
+UCI PhiUSIIL,special_char_ratio,0.19801,0.18922,-0.0088
+UCI PhiUSIIL,subdomain_count,1.16166,1.15732,-0.00435
+UCI PhiUSIIL,url_entropy,3.85256,4.10509,0.25253
+UCI PhiUSIIL,has_https_scheme,1.0,0.48649,-0.51351
+UCI PhiUSIIL,has_ip_host,0.0,0.00603,0.00603
+UCI PhiUSIIL,has_login_keyword,1e-05,0.03069,0.03068
+UCI PhiUSIIL,has_verify_keyword,1e-05,0.00336,0.00336

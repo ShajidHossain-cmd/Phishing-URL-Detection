@@ -1,0 +1,5 @@
+source_name,label_name,has_explicit_scheme,has_https_scheme,zero_path,has_query,has_digit,long_url_100,has_ip_host,has_login_keyword,has_verify_keyword
+Kaggle,benign,0.08265,0.00456,0.00066,0.16992,0.55529,0.1084,6e-05,0.03379,0.00147
+Kaggle,phishing,0.26412,0.0741,0.23098,0.08641,0.37881,0.06892,0.00352,0.04988,0.00513
+UCI PhiUSIIL,benign,1.0,1.0,1.0,0.0,0.0264,0.0,0.0,1e-05,1e-05
+UCI PhiUSIIL,phishing,1.0,0.48649,0.40326,0.06039,0.47491,0.04964,0.00603,0.03069,0.00336
