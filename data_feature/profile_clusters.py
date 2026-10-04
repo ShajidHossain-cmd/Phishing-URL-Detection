@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-from feature_engineering import FEATURES  # teammate 1's 21 feature columns
+from feature_engineering import FEATURES  #21 feature columns
 
 SEED = 42
 K_VALUES = [2, 4]   # the two candidates we are comparing
@@ -22,7 +22,7 @@ phishing = df[df["label"] == 1].reset_index(drop=True)  # label only used for th
 raw = phishing[FEATURES].copy()   # untouched values, kept so we can quote readable numbers
 X = raw.copy()
 
-#Same preprocessing as choose_k.py: log-transform skewed columns, then scale 
+#Same preprocessing as choose_k.py
 skewed_cols = ["url_length", "host_length", "path_length", "query_length",
                "dot_count", "hyphen_count", "at_count", "percent_count",
                "digit_count", "subdomain_count", "path_depth", "query_param_count"]
@@ -49,12 +49,12 @@ for k in K_VALUES:
         members = np.where(labels == c)[0]
         print(f"\n--- Cluster {c}: {len(members):,} URLs ({len(members) / len(labels):.1%}) ---")
 
-        # Confounder check: does this cluster just mean "one dataset"?
+        #does this cluster just mean one dataset
         src = phishing.loc[members, "source"].value_counts(normalize=True)
         print("Source mix:", ", ".join(f"{s} {p:.0%}" for s, p in src.items()))
 
         # Scaled data has mean 0 over the whole phishing class, so a cluster's mean
-        # on a scaled feature IS how many standard deviations it sits from the average.
+        # on a scaled feature is how many standard deviations it sits from the average.
         diff = scaled.loc[members].mean()
         top = diff.reindex(diff.abs().sort_values(ascending=False).index).head(TOP_N)
         print(f"Top {TOP_N} features vs phishing average:")
@@ -66,7 +66,7 @@ for k in K_VALUES:
             print(f"  {col:20s} {d:+.2f} sd   (cluster {kind} {describe(cl_val, col)} "
                   f"vs overall {describe(all_val, col)})")
 
-        # Representative examples = the 3 URLs closest to the cluster centre
+        # examples = the 3 URLs closest to the cluster centre
         dist = np.linalg.norm(X_scaled[members] - km.cluster_centers_[c], axis=1)
         nearest = members[np.argsort(dist)[:3]]
         print("Examples:")
