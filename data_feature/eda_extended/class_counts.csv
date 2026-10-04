@@ -1,0 +1,5 @@
+source_name,label_name,count,within_source_pct
+Kaggle,benign,428071,81.99682793865816
+Kaggle,phishing,93987,18.003172061341843
+UCI PhiUSIIL,benign,134850,57.30567702290952
+UCI PhiUSIIL,phishing,100467,42.69432297709048

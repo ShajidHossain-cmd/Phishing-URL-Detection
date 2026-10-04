@@ -1,0 +1,17 @@
+source_name,label_name,,url_length,path_length,url_entropy
+Kaggle,benign,0.1,23.0,1.0,3.7179
+Kaggle,benign,0.5,46.0,25.0,4.2215
+Kaggle,benign,0.9,102.0,71.0,4.6658
+Kaggle,benign,0.99,239.0,127.0,5.1388
+Kaggle,phishing,0.1,18.0,0.0,3.4528
+Kaggle,phishing,0.5,35.0,13.0,3.9979
+Kaggle,phishing,0.9,80.0,42.0,4.5584
+Kaggle,phishing,0.99,234.0,120.0,5.4877
+UCI PhiUSIIL,benign,0.1,21.0,0.0,3.5842
+UCI PhiUSIIL,benign,0.5,27.0,0.0,3.8664
+UCI PhiUSIIL,benign,0.9,34.0,0.0,4.0931
+UCI PhiUSIIL,benign,0.99,40.0,0.0,4.2426
+UCI PhiUSIIL,phishing,0.1,22.0,0.0,3.6635
+UCI PhiUSIIL,phishing,0.5,34.0,1.0,4.0579
+UCI PhiUSIIL,phishing,0.9,80.0,28.0,4.6794
+UCI PhiUSIIL,phishing,0.99,231.0,86.0,5.0925
